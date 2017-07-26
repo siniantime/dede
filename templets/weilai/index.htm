@@ -1,0 +1,591 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" Content="{dede:global.cfg_description/}" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/reset.css" />
+<link type="text/css" rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/style.css" />
+<SCRIPT type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/DD_belatedPNG.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="{dede:global.cfg_templets_skin/}/style//jquery-1.4.2.min.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="{dede:global.cfg_templets_skin/}/style//imgroll.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="{dede:global.cfg_templets_skin/}/style//menu.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="{dede:global.cfg_templets_skin/}/style//tz.js"></SCRIPT>
+<script src="{dede:global.cfg_templets_skin/}/style/select.js" type="text/javascript"></script>
+<!--[if IE 6]>
+<script src="DD_belatedPNG.js"></script>
+<script>DD_belatedPNG.fix('.rc,.lc,.banner_text_img');</script>
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+function secBoard(elementID,listName,n) {
+var elem = document.getElementById(elementID);
+var elemlist = elem.getElementsByTagName("a");
+for (var i=0; i<elemlist.length; i++) {
+elemlist[i].className = "linknormal";
+var m = i+1;
+document.getElementById(listName+"_"+m).className = "linknormal";
+}
+elemlist[n-1].className = "linkcurrent";
+document.getElementById(listName+"_"+n).className = "linkcurrent";
+}
+//]]>
+</script>
+</head>
+
+<body onload="window.scrollTo(0,95)">
+
+  {dede:include filename="head.htm"/}
+
+<div class="menu">
+  <div class="content">
+    <ul id="nav">
+      <li class="mainhome"><a href="{dede:global.cfg_basehost/}" class="nav nav_01 home" target="_blank">首页</a></li>
+
+      {dede:channelartlist     typeid='2,2'           }
+        <li class="mainlevel">
+        <a href="{dede:field name='typeurl'/}" class="nav nav_02" target="_blank">{dede:field name='typename'/}</a>
+          <ul class="sv hide">
+            {dede:channel type='son' noself='yes'}
+              <li><a href="[field:typelink/]">[field:typename/]</a> </li>
+              {/dede:channel}
+          </ul>
+        </li>
+      {/dede:channelartlist}
+
+      <!--产品中心-->
+
+      <li class="mainlevel">
+<a href="http://www.weilaijixie.com/products.html" class="nav nav_03" target="_blank">产品中心</a>
+        <ul id="sub_04" class="pro hide">
+          <li id="pro_box">
+            <div id="menu_products">
+              <dl id="l_110">
+                <dt>
+                  <h2><a href="http://www.weilaijixie.com/pssb.html" title="破碎设备" target="_blank">破碎设备</a></h2>
+                </dt>
+        <dd id="hot"><a href="http://www.weilaijixie.com/espsj.html" title="颚式破碎机" target="_blank">●&nbsp;&nbsp;颚式破碎机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/obespsj.html" title="欧版颚式破碎机" target="_blank">●&nbsp;&nbsp;欧版颚式破碎机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/fjpsj.html" title="反击式破碎机" target="_blank">●&nbsp;&nbsp;反击式破碎机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd><a href="http://www.weilaijixie.com/obfjp.html" title="欧版反击式破碎机" target="_blank">●&nbsp;&nbsp;欧版反击式破碎机</a></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/thyzp.html" title="弹簧圆锥破碎机" target="_blank">●&nbsp;&nbsp;弹簧圆锥破碎机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/yyyzp.html" title="液压圆锥破碎机" target="_blank">●&nbsp;&nbsp;液压圆锥破碎机</a></dd>
+         <dd id="hot"><a href="http://www.weilaijixie.com/zcspsj" title="重锤式破碎机" target="_blank">●&nbsp;&nbsp;重锤式破碎机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/cspsj.html" title="锤式破碎机" target="_blank">●&nbsp;&nbsp;锤式破碎机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd><a href="http://www.weilaijixie.com/dgpsj.html" title="对辊破碎机" target="_blank">●&nbsp;&nbsp;对辊破碎机</a></dd>
+        <dd><a href="http://www.weilaijixie.com/fhpsj.html" title="立轴式复合破碎机" target="_blank">●&nbsp;&nbsp;立轴式复合破碎机</a></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/ydpsz.html" title="移动破碎站" target="_blank">●&nbsp;&nbsp;移动破碎站</a></dd>
+        <dd><a href="http://www.weilaijixie.com/xspsj.html" title="箱式破碎机" target="_blank">●&nbsp;&nbsp;箱式破碎机</a></dd>             
+              </dl>
+              <div class="vline" style="height:255px;"></div>
+              <dl id="l_270">
+                <dt>
+                <h2><a href="http://www.weilaijixie.com/zssb.html" title="制砂设备" target="_blank">制砂设备</a></h2>
+                </dt>
+        <dd id="hot"><a href="http://www.weilaijixie.com/vsizsj.html" title="VSI制砂机" target="_blank">●&nbsp;&nbsp;VSI制砂机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/5xzsj.html" title="5X冲击式制砂机" target="_blank">●&nbsp;&nbsp;5X冲击式制砂机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd><a href="http://www.weilaijixie.com/pclzsj.html" title="PCL制砂机" target="_blank">●&nbsp;&nbsp;PCL制砂机</a></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/lsxsj.html" title="轮式洗砂机" target="_blank">●&nbsp;&nbsp;轮式洗砂机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd><a href="http://www.weilaijixie.com/lxxsj.html" title="螺旋洗砂机" target="_blank">●&nbsp;&nbsp;螺旋洗砂机</a></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/yzds.html" title="圆振动筛" target="_blank">●&nbsp;&nbsp;圆振动筛</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd><a href="http://www.weilaijixie.com/xsj.html" title="细碎机" target="_blank">●&nbsp;&nbsp;细碎机</a></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/xshsj.html" title="细砂回收机" target="_blank">●&nbsp;&nbsp;细砂回收机</a></dd>
+        <dd><a href="http://www.weilaijixie.com/pdssj.html" title="皮带输送机" target="_blank">●&nbsp;&nbsp;皮带输送机</a></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/zdglj.html" title="振动给料机" target="_blank">●&nbsp;&nbsp;振动给料机</a></dd>
+              </dl>
+               <div class="vline" style="height:141px;"></div>
+              <dl id="l_130">
+                <dt>
+                  <h2><a href="http://www.weilaijixie.com/ssscx.html" title="砂石料生产线" target="_blank">砂石料生产线</a></h2>
+                </dt>
+                <dd><a href="http://www.weilaijixie.com/shashiliaoshengchanxian/slscx.html" title="石料生产线" target="_blank">●&nbsp;&nbsp;石料生产线</a></dd>
+        <dd><a href="http://www.weilaijixie.com/zhishashashengchanxian/zsscx.html" title="制砂生产线" target="_blank">●&nbsp;&nbsp;制砂生产线</a></dd>
+        <dd><a href="http://www.weilaijixie.com/zzyscx/zzyscx.html" title="珍珠岩生产线" target="_blank">●&nbsp;&nbsp;珍珠岩生产线</a></dd>
+              </dl>
+              <div class="vline" style="height:230px;"></div>
+              <dl id="l_145">
+                <dt>
+                  <h2><a href="http://www.weilaijixie.com/xksb.html" title="选矿设备" target="_blank">选矿设备</a></h2>
+                </dt>
+                <dd id="hot"><a href="http://www.weilaijixie.com/qmj.html" title="球磨机" target="_blank">●&nbsp;&nbsp;球磨机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd><a href="http://www.weilaijixie.com/fxj.html" title="浮选机" target="_blank">●&nbsp;&nbsp;浮选机</a></dd>
+        <dd id="hot"><a href="http://www.weilaijixie.com/hgj.html" title="烘干机" target="_blank">●&nbsp;&nbsp;烘干机</a><img src="http://www.weilaijixie.com/images1312/dd_bg_16.jpg" /></dd>
+        <dd><a href="http://www.weilaijixie.com/fjj.html" title="分级机" target="_blank">●&nbsp;&nbsp;分级机</a></dd>
+        <dd><a href="http://www.weilaijixie.com/cxj.html" title="磁选机" target="_blank">●&nbsp;&nbsp;磁选机</a></dd>
+        <dd><a href="http://www.weilaijixie.com/hzy.html" title="回转窑" target="_blank">●&nbsp;&nbsp;回转窑</a></dd>
+        <dd><a href="http://www.weilaijixie.com/lmmfj.html" title="雷蒙磨粉机" target="_blank">●&nbsp;&nbsp;雷蒙磨粉机</a></dd>
+        <dd><a href="http://www.weilaijixie.com/cxmfj.html" title="超细磨粉机" target="_blank">●&nbsp;&nbsp;超细磨粉机</a></dd>
+              </dl>
+
+              <div class="vline" style="height:230px;"></div>
+              <dl id="l_146">
+                <dt>
+                <h2><a href="http://www.weilaijixie.com/xkgy/index.html" title="选矿工艺" target="_blank">选矿工艺</a></h2>
+                </dt>
+                <dd><a href="http://www.weilaijixie.com/xkgy/3075.html" title="铜矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;铜矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3090.html" title="铅锌矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;铅锌矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3081.html" title="锡矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;锡矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3084.html" title="镍矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;镍矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3078.html" title="钨矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;钨矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3083.html" title="钼矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;钼矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3085.html" title="锑矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;锑矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3082.html" title="汞矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;汞矿石选矿工艺 </a></dd>
+
+         <dd><a href="http://www.weilaijixie.com/xkgy/3093.html" title="钨钼铋多金属矿石选矿 " target="_blank">●&nbsp;&nbsp;钨钼铋多金属矿石选矿 </a></dd>
+
+         <dd><a href="http://www.weilaijixie.com/xkgy/3077.html" title="金银矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;金银矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3091.html" title="钽铌矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;钽铌矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3074.html" title="铁矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;铁矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3076.html" title="锰矿石选矿工艺 " target="_blank">●&nbsp;&nbsp;锰矿石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3088.html" title="铬铁矿选矿工艺 " target="_blank">●&nbsp;&nbsp;铬铁矿选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3103.html" title="萤石选矿工艺" target="_blank">●&nbsp;&nbsp;萤石选矿工艺</a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3104.html" title="硅石和硅砂选矿工艺 " target="_blank">●&nbsp;&nbsp;硅石和硅砂选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3102.html" title="叶腊石选矿工艺 " target="_blank">●&nbsp;&nbsp;叶腊石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3095.html" title="高岭土选矿工艺 " target="_blank">●&nbsp;&nbsp;高岭土选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3096.html" title="铝土矿选矿工艺 " target="_blank">●&nbsp;&nbsp;铝土矿选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3098.html" title="石灰石选矿工艺 " target="_blank">●&nbsp;&nbsp;石灰石选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3101.html" title="石墨选矿工艺 " target="_blank">●&nbsp;&nbsp;石墨选矿工艺 </a></dd>
+
+        <dd><a href="http://www.weilaijixie.com/xkgy/3097.html" title="膨润土选矿工艺 " target="_blank">●&nbsp;&nbsp;膨润土选矿工艺 </a></dd>
+
+              </dl>
+
+            </div>
+          </li>
+        </ul>
+      </li>
+      
+
+      <!--产品中心结束-->
+        {dede:channelartlist row='7' typeid='8,9,10,11,12,13,14'}
+          <li class="mainlevel">
+            <a class="nav nav_02" href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
+            <ul class="sv hide">
+              {dede:channel type='son' noself='yes'}
+              <li><a href="[field:typelink/]">[field:typename/]</a> </li>
+              {/dede:channel}
+            </ul>
+          </li>
+        {/dede:channelartlist}
+
+
+      <!--
+      <li class="mainlevel">
+      <a href="http://www.weilaijixie.com/qiyejieshao.htm" class="nav nav_02" target="_blank">企业介绍</a>
+        <ul class="sv hide">
+          <li><a href="http://www.weilaijixie.com/qiyejieshao/qiyejieshao.html">企业介绍</a> </li>
+          <li><a href="http://www.weilaijixie.com/qiyejieshao/qiyewenhua.html">企业文化</a> </li>
+          <li><a href="http://www.weilaijixie.com/qiyejieshao/fuwuchengnuo.html">服务承诺</a> </li>
+          <li><a href="http://www.weilaijixie.com/qiyejieshao/flsm.html">法律声明</a> </li>
+        </ul>
+      </li>
+      
+            <li class="mainlevel">
+<a href="http://www.weilaijixie.com/news/index.html" class="nav nav_04" target="_blank">新闻资讯</a>
+        <ul class="sv hide">
+
+ <li><a href="http://www.weilaijixie.com/news/qiye.html" target="_blank">企业新闻</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/news/hynews.html" target="_blank">行业新闻</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/news/cpnews.html" target="_blank">产品知识</a> </li>
+
+
+        </ul>
+      </li>
+    <li class="mainlevel">
+<a href="http://www.weilaijixie.com/zt/index.html" class="nav nav_05" target="_blank">专题介绍</a>
+        <ul class="sv hide">
+
+ <li><a href="http://www.weilaijixie.com/zt/cp.html" target="_blank">产品专题</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/zt/hy.html" target="_blank">行业专题</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/zt/wl.html" target="_blank">物料专题</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/zt/sf.html" target="_blank">省份专题</a> </li>
+
+        </ul>
+      </li>
+      <li class="mainlevel">
+<a href="http://www.weilaijixie.com/pjfw/index.html" class="nav nav_06" target="_blank">配件服务</a>
+        <ul class="sv hide">
+
+ <li><a href="http://www.weilaijixie.com/pjfw/index.html" target="_blank">配件服务</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/pjfw/shfw.html" target="_blank">售后服务</a> </li>
+
+        </ul>
+      </li>
+      <li  class="mainlevel">
+<a href="http://www.weilaijixie.com/alxc/index.html" class="nav nav_07" target="_blank">案例现场</a>
+        <ul class="sv hide">
+
+ <li><a href="http://www.weilaijixie.com/sptk/tk.html" target="_blank">案例图片</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/alxc/index.html" target="_blank">案例介绍</a> </li>
+
+        </ul>
+      </li>
+          <li  class="mainlevel">
+<a href="http://www.weilaijixie.com/sptk/index.html" class="nav nav_08" target="_blank">视频图库</a>
+        <ul class="sv hide">
+
+ <li><a href="http://www.weilaijixie.com/sptk/tk.html" target="_blank">图片中心</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/sptk_sp/sp.html" target="_blank">视频中心</a> </li>
+
+        </ul>
+      </li>
+          <li  class="mainlevel">
+<a href="http://www.weilaijixie.com/rlzy/index.html" class="nav nav_09" target="_blank">人力资源</a>
+        <ul class="sv hide">
+
+ <li><a href="http://www.weilaijixie.com/rlzy/zpxx/index.html" target="_blank">招聘信息</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/rlzy/zplc/index.html" target="_blank">招聘流程</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/rlzy/jltd/index.html" target="_blank">简历投递</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/rlzy/rzxz/index.html" target="_blank">入职须知</a> </li>
+
+        </ul>
+      </li>
+              <li  class="mainlevel">
+<a href="http://www.weilaijixie.com/lxwm/index.html" class="nav nav_09" target="_blank">联系我们</a>
+        <ul class="sv hide">
+
+ <li><a href="http://www.weilaijixie.com/lxwm/lxfs.html" target="_blank">联系方式</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/lxwm/dtdh.html" target="_blank">地图导航</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/qqwz/qqwz.html" target="_blank">全球网站</a> </li>
+
+ <li><a href="http://www.weilaijixie.com/zxdg/zxdg.html" target="_blank">在线订购</a> </li>
+
+        </ul>
+      </li>
+          -->
+    </ul>
+
+  </div>
+  <!--menu content end-->
+</div>
+<div class="banner">
+<ul class="banul">
+    <div id="flashLine">
+      <div id="flash"> 
+    <a href="http://www.weilaijixie.com/vsizsj.html" target="_blank" id="flash1"  style="display:block;background:url(http://www.weilaijixie.com/images/banner1.jpg) center no-repeat; "></a> 
+    <a href="" target="_blank" id="flash2"  style="display:none;background:url(http://www.weilaijixie.com/images/banner2.jpg) center no-repeat; "></a> 
+    <a href="" target="_blank" id="flash3" style="display: none; background:url(http://www.weilaijixie.com/images/banner3.jpg) center no-repeat; "></a> 
+    <a href="" target="_blank" id="flash4"  style="display: none; background:url(http://www.weilaijixie.com/images/banner4.jpg) center no-repeat; "></a>
+      <div class="flash_bar">
+          <div class="dq" id="f1" onclick="changeflash(1)"></div>
+          <div class="no" id="f2" onclick="changeflash(2)"></div>
+          <div class="no" id="f3" onclick="changeflash(3)"></div>
+          <div class="no" id="f4" onclick="changeflash(4)"></div>
+        </div>
+    </div>
+    </div>
+<li class="banner_bg"></li>
+<li class="banner_text">
+<img class="banner_text_img" src="images/banarrow.png" align="absmiddle" />
+<a href='http://www.weilaijixie.com/espsj.html'>颚式破碎机</a>
+:<a href='http://www.weilaijixie.com/fjpsj.html'>反击式破碎机</a>
+:<a href='http://www.weilaijixie.com/vsizsj.html'>VSI制砂机</a>
+:<a href='http://www.weilaijixie.com/pclzsj.html'>PCL制砂机</a>
+:<a href='http://www.weilaijixie.com/shashiliaoshengchanxian/slscx.html'>石料生产线</a>
+:<a href='http://www.weilaijixie.com/zhishashashengchanxian/zsscx.html'>制砂生产线</a>
+</li>
+</ul>
+</div>
+<SCRIPT type="text/javascript" src="http://www.weilaijixie.com/templets/wljx0322/js/foucs.js"></SCRIPT>
+<div class="con">
+<div class="con_left">
+<ul class="con_left_ul1">
+<li class="con_tit"><b>新闻</b>资讯<span class="con_entit">/&nbsp;&nbsp;News</span></li>
+<li class="con_left_first_img">
+<a href="http://www.weilaijixie.com/news/qiye201707243288.html" target="_bank"><img src='http://www.weilaijixie.com/uploads/allimg/170724/1_0H409362R0E.jpg' border='0' width='120' height='120' alt='河南节能环保型制砂机的介绍'></a>
+</li>
+<li class="con_left_first_nr">
+<span class="con_left_first_tit"><a href="http://www.weilaijixie.com/news/qiye201707243288.html" title="河南节能环保型制砂机的介绍" target="_bank">河南节能环保型制砂机</a></span><br/>
+节能环保型制砂机，传统制砂设备的改良版本，以高效节能环保闻名于世。对比现有国<a href="http://www.weilaijixie.com/news/qiye201707243288.html">...</a>
+</li>
+
+</ul>
+<ul>
+<li class="con_left_arctit">
+<span class="con_left_arctit_typetit">企业新闻：</span>
+<a href="http://www.weilaijixie.com/news/qiye201707243288.html" title='河南节能环保型制砂机的介绍' target="_bank">河南节能环保型制砂机的介绍</a>
+</li>
+<li class="con_left_arctit">
+<span class="con_left_arctit_typetit">企业新闻：</span>
+<a href="http://www.weilaijixie.com/news/qiye201707073283.html" title='铁路专用制砂生产线-郑州未来机' target="_bank">铁路专用制砂生产线-郑州未来机</a>
+</li>
+
+<li class="con_left_arctit">
+<span class="con_left_arctit_typetit">行业新闻：</span>
+<a href="http://www.weilaijixie.com/news/hy201707213286.html" title=' 投资砂石生产线如何把钱花在刀'  target="_bank"> 投资砂石生产线如何把钱花在刀</a>
+</li>
+<li class="con_left_arctit">
+<span class="con_left_arctit_typetit">行业新闻：</span>
+<a href="http://www.weilaijixie.com/news/hy201706103277.html" title='浙江天台部门联动 根除非法采制'  target="_bank">浙江天台部门联动 根除非法采制</a>
+</li>
+
+<li class="con_left_arctit">
+<span class="con_left_arctit_typetit">产品知识：</span>
+<a href="http://www.weilaijixie.com/news/cp201707223287.html" title='如何避免制砂机零部件磨损'  target="_bank">如何避免制砂机零部件磨损</a>
+</li>
+
+</ul>
+</div>
+<div class="con_mid">
+<ul class="con_left_ul1">
+<li class="con_tit con_tit1"><b>产品</b>中心<span class="con_entit">/&nbsp;&nbsp;Products</span></li>
+</ul>
+<p class='p10'><img src="http://www.weilaijixie.com/templets/wljx0322/images/xian_10.jpg"/></p>
+<p class="p11">核心产品：<a href="http://www.weilaijixie.com/espsj.html" target="_bank">颚式破碎机</a>| <a href="http://www.weilaijixie.com/cspsj.html" target="_bank">锤式破碎机</a>| <a href="http://www.weilaijixie.com/zssb.html" target="_bank">制砂设备</a>| <a href="http://www.weilaijixie.com/ssscx.html" target="_bank">砂石料生产线</a></p>
+<p class="p11">产品分类：<a href="http://www.weilaijixie.com/pssb.html" target="_bank">破碎设备</a>| <a href="http://www.weilaijixie.com/zssb.html" target="_bank">制砂设备</a>| <a href="http://www.weilaijixie.com/xksb.html" target="_bank">选矿设备</a>| <a href="http://www.weilaijixie.com/ssscx.html" target="_bank">砂石料生产线</a></p>
+<p class="p11">服务领域：<a href="http://www.weilaijixie.com/zt/wl.html" target="_bank">水泥</a>| <a href="http://www.weilaijixie.com/zt/wl.html" target="_bank">建材</a>| <a href="http://www.weilaijixie.com/zt/wl.html" target="_bank">砂石</a>| <a href="http://www.weilaijixie.com/zt/wl.html" target="_bank">公路</a>|<a href="http://www.weilaijixie.com/zt/wl.html" target="_bank">港口</a></p>
+<ul class="con_mid_ul1">
+<div class="con_mid_scroll">
+<ul class="con_mid_scroll_left" id="leftArr">
+<a><input name="imgbtn" type="image" src="http://www.weilaijixie.com/templets/wljx0322/images/xian_18.jpg" border="0"></a>
+</ul>
+<ul class="con_mid_scroll_zj">
+<li class="con_mid_scroll_wk"></li>
+<li class="con_mid_scroll_picwk" id="Aequipment">
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/espsj.html" target="_blank">
+<img src="uploads/cp/eshipsj/1.jpg" title="颚式破碎机" /><span>颚式破碎机</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/obespsj.html" target="_blank">
+<img src="uploads/cp/obanepo/1.jpg" title="欧版颚式破碎机" /><span>欧版颚式破碎机</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/fjpsj.html" target="_blank">
+<img src="uploads/cp/fanjishipsj/1.jpg" title="反击式破碎机" /><span>反击式破碎机</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/obfjp.html" target="_blank">
+<img src="uploads/cp/obanfanjipo/1.jpg" title="欧版反击式破碎机" /><span>欧版反击式破碎机</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/thyzp.html" target="_blank">
+<img src="uploads/cp/CSyuanzhuipo/1.jpg" title="弹簧圆锥破碎机" /><span>弹簧圆锥破碎机</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/yyyzp.html" target="_blank">
+<img src="uploads/cp/HPCyuanzhuipo/1.jpg" title="液压圆锥破碎机" /><span>液压圆锥破碎机</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/cspsj.html" target="_blank">
+<img src="uploads/cp/chuishipsj/1.jpg" title="锤式破碎机" /><span>锤式破碎机</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/dgpsj.html" target="_blank">
+<img src="uploads/cp/duigunpsj/1.jpg" title="对辊破碎机" /><span>对辊破碎机</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/fhpsj.html" target="_blank">
+<img src="uploads/cp/fuhepsj/1.jpg" title="立轴式复合破碎机" /><span>立轴式复合破碎机</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/ydpsz.html" target="_blank">
+<img src="uploads/cp/yidongposuizhan/1.jpg" title="移动破碎站" /><span>移动破碎站</span>
+</a>
+
+<a class="con_mid_scroll_pic" href="http://www.weilaijixie.com/xspsj.html" target="_blank">
+<img src="uploads/cp/xspsj/1.jpg" title="箱式破碎机" /><span>箱式破碎机</span>
+</a>
+
+</li>
+</ul>
+<ul class="con_mid_scroll_right" id="rightArr">
+<a><input name="imgbtn" type="image" src="http://www.weilaijixie.com/templets/wljx0322/images/xian_21.jpg" border="0"></a>
+</ul>
+      <script type="text/javascript">
+          var scrollPic = new  ScrollPic();
+          scrollPic.scrollContId   = "Aequipment"; //内容容器ID
+          scrollPic.arrLeftId      = "rightArr";//右箭头ID
+          scrollPic.arrRightId     = "leftArr"; //左箭头ID         
+          scrollPic.frameWidth     = 368;//显示框宽度
+          scrollPic.pageWidth      = 250; //翻页宽度          
+          scrollPic.speed          = 80; //移动速度(单位毫秒，越小越快)
+          scrollPic.space          = 200; //每次移动像素(单位px，越大越快)
+          scrollPic.autoPlay       = true; //自动播放
+          scrollPic.autoPlayTime   = 3; //自动播放间隔时间(秒)
+          scrollPic.initialize(); //初始化
+       </script>  
+</div>
+</ul>
+</div>
+<!--mid end-->
+<div class="con_right">
+<ul>
+<li class="con_tit con_tit2"><b>案例</b>应用<span class="con_entit">/&nbsp;&nbsp;CASE APPLICATIONS</span></li>
+<li class="con_right_img"><a href="http://www.weilaijixie.com/alxc/alxc20130425263.html" title="石灰石碎石生产线" target="_blank"><img src="http://www.weilaijixie.com/uploads/alxctp/3.jpg" alt="石灰石碎石生产线" /></a></li>
+<li class="con_right_text"><b>项目名称:</b><a href="http://www.weilaijixie.com/alxc/alxc20130425263.html" title="石灰石碎石生产线" target="_bank">石灰石碎石生产线</a></li>
+
+</ul>
+<div class="left2">
+<form name="pronav">
+<select name="s1" onchange="redirec(this.options.selectedIndex)">
+<option value="javascript:void(0);" selected="selected">--请选择所需产品分类--</option>
+  <option value="1">破碎设备</option>
+  <option value="2">制砂设备</option>
+  <option value="3">选矿设备</option>
+  <option value="4">砂石料生产线</option>
+</select>
+<select name="s2" onchange="location.href=this.options[this.selectedIndex].value;">
+<option value="javascript:void(0);" selected="selected">--请选择所需产品--</option>
+</select>
+</form>
+    </div>
+</div>
+</div>
+
+<div class="bomnav">
+<ul class="bomnav_wk">
+
+<ul class="bomnav_col">
+<li class="bomnav_col_tit">关于我们</li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/qiyejieshao/qiyejieshao.html' title="企业介绍" target="_bank">企业介绍</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/qiyejieshao/qiyewenhua.html' title="企业文化" target="_bank">企业文化</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/qiyejieshao/fuwuchengnuo.html' title="服务承诺" target="_bank">服务承诺</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/qiyejieshao/flsm.html' title="法律声明" target="_bank">法律声明</a> </li>
+
+</ul>
+
+<ul class="bomnav_col">
+<li class="bomnav_col_tit">产品分类</li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/pssb.html' title="破碎设备" target="_bank">破碎设备</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/zssb.html' title="制砂设备" target="_bank">制砂设备</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/xksb.html' title="选矿设备" target="_bank">选矿设备</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/ssscx.html' title="砂石料生产线" target="_bank">砂石料生产线</a> </li>
+
+</ul>
+<ul class="bomnav_col">
+<li class="bomnav_col_tit">新闻中心</li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/news/qiye.html' title="企业新闻" target="_bank">企业新闻</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/news/hynews.html' title="行业新闻" target="_bank">行业新闻</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/news/cpnews.html' title="产品知识" target="_bank">产品知识</a> </li>
+
+</ul>
+<ul class="bomnav_col">
+<li class="bomnav_col_tit">专题介绍</li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/zt/cp.html' title="产品专题" target="_bank">产品专题</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/zt/hy.html' title="行业专题" target="_bank">行业专题</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/zt/wl.html' title="物料专题" target="_bank">物料专题</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/zt/sf.html' title="省份专题" target="_bank">省份专题</a> </li>
+
+</ul>
+<ul class="bomnav_col">
+<li class="bomnav_col_tit">产品相关</li>
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/sptk/tk.html' title="图片中心" target="_bank">图片中心</a> </li>
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/alxc/index.html' title="案例介绍" target="_bank">案例介绍</a> </li>
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/pjfw/index.html' title="配件服务" target="_bank">配件服务</a> </li>
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/rlzy/zpxx/index.html' title="招聘信息" target="_bank">招聘信息</a> </li>
+</ul>
+
+<ul class="bomnav_col">
+<li class="bomnav_col_tit">联系我们</li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/lxwm/lxfs.html' title="联系方式" target="_bank">联系方式</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/lxwm/dtdh.html' title="地图导航" target="_bank">地图导航</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/qqwz/qqwz.html' title="全球网站" target="_bank">全球网站</a> </li>
+
+<li class="bomnav_col_arctit"><a href='http://www.weilaijixie.com/zxdg/zxdg.html' title="在线订购" target="_bank">在线订购</a> </li>
+
+</ul>
+
+<ul class="bomnav_col"style="width:108px;">
+<li class="bomnav_col_tit" style="color:red;">新品推荐</li>
+<li class="bomnav_col_arctit"style="width:108px;"><img src="http://www.weilaijixie.com/templets/wljx0322/images/new.png" /><a href='http://www.weilaijixie.com/zcspsj' target="_bank" style="margin:3px;">重锤式破碎机</a> </li>
+</ul>
+
+<ul class="link"><span>友情链接：</span><a href='http://www.hnshunda.net' target='_blank'>花生榨油机</a> <a href='http://www.tecochina.net.cn' target='_blank'>东元电机</a> <a href='http://www.qingzhizhuanji.com' target='_blank'>轻质砖设备</a> <a href='http://www.liuweirong.net' target='_blank'>浮选机厂家</a> <a href='http://www.weilaijixie.com/vsi.html' target='_blank'>制砂机</a> <a href='http://www.jsmpacking.com' target='_blank'>打包带厂家</a> <a href='http://www.zxtcjixie.com' target='_blank'>型煤设备</a> <a href='http://www.hnsmzk.com' target='_blank'>矿用混凝土输送泵车</a> <a href='http://www.aokai88.com' target='_blank'>除尘布袋</a> <a href='http://www.mtxtyqc.com' target='_blank'>篮球架厂家</a> <a href='http://www.ezaoge.com' target='_blank'>粉碎机</a> <a href='http://www.hnebjx.com/' target='_blank'>搅拌站</a> <a href='http://www.lmmfj.cn' target='_blank'>雷蒙磨粉机</a> <a href='http://www.shuvjd.com' target='_blank'>真空上料机</a> <a href='http://www.qsqysg.com' target='_blank'>p型清扫器</a> <a href='http://www.gcjxgj.cn' target='_blank'>机械租赁</a> <a href='http://www.baoziji.org' target='_blank'>包子机</a> <a href='http://www.dalianshui.cn' target='_blank'>EDI超纯水设备</a> <a href='http://www.zzxingyu.com' target='_blank'>混凝土搅拌站</a>  <br/ >（申请友情链接要求：制砂机机械及相关行业网站,快照、收录、PR值相当、网站无惩罚记录。请联系站长QQ1287926994）<a href="http://218.28.13.36:8999/TopICRS/certificateAction.do?id=201702170000004030" target="_blank" rel="nofollow"><img src="http://www.weilaijixie.com/templets/wljx0322/images/zzgs_icon.jpg" width="15px" height="20px;" /><a></ul>
+
+</ul>
+</div>
+<script type="text/javascript">
+var _mvq = _mvq || [];
+_mvq.push(['$setAccount', 'm-196651-0']);
+
+_mvq.push(['$logConversion']);
+(function() {
+var mvl = document.createElement('script');
+mvl.type = 'text/javascript'; mvl.async = true;
+mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(mvl, s);
+})();
+
+</script>            
+<!--bomnav end--><div class="clear"></div>
+<div class="footer">
+<div class="footer_cen">
+<div class="footer_cen1">
+<p>郑州未来机械制造有限公司 &nbsp; &nbsp;  版权所有Copyright © 2000-2016 &nbsp; 备案号：<a href="http://www.miitbeian.gov.cn" rel="nofollow">豫ICP备10200557-16号</a>  地址：河南·郑州市中原区须水工贸园
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id=cnzz_stat_icon_1254544440%3E%3C/span%3E%3Cscript src=" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1254544440 type=text/javascript%3E%3C/script%3E"));</script>
+<script type="text/javascript" src="//s.union.360.cn/144258.js" async defer></script>
+<a href="http://webscan.360.cn/index/checkwebsite/url/www.weilaijixie.com" name="b1f968fb91e1e29c61ff9168b4e00bb3" rel="nofollow">360网站安全检测平台</a>
+</p>
+</div>
+<div class="footer_cen2">
+<ul>
+<li><a href="http://www.weilaijixie.com/lxwm/index.html" target="_blank">联系我们</a></li>
+<li>|</li>
+<li><a href="http://bft.zoosnet.net/LR/Chatpre.aspx?id=BFT21676607" target="_blank" rel="nofollow">在线订购</a></li>
+</div>
+</ul>
+</div>
+</div>
+<script>
+var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?a903ccb9d2e20d639b14675b3aa6eb13"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script> 
+<script type="text/javascript" charset="utf-8" async src="http://lxbjs.baidu.com/lxb.js?sid=2641631"></script>
+</div>
+<!--footer 结束-->
+</body>
+</html>
+<script language="javascript" src="http://bft.zoosnet.net/JS/LsJS.aspx?siteid=BFT21676607&float=1"></script>

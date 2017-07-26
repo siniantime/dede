@@ -1,0 +1,1 @@
+<li class="mainlevel"><a class="nav nav_02" href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
