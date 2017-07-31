@@ -30,5 +30,27 @@ $z[13][4]['typeid']="2,2";
 $z[14]=Array("channelartlist","\r\n          <li class=\"mainlevel\">\r\n            <a class=\"nav nav_02\" href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>\r\n            <ul class=\"sv hide\">\r\n              {dede:channel type='son' noself='yes'}\r\n              <li><a href=\"[field:typelink/]\">[field:typename/]</a> </li>\r\n              {/dede:channel}\r\n            </ul>\r\n          </li>\r\n        ",13694,14152);
 $z[14][4]['row']="7";
 $z[14][4]['typeid']="8,9,10,11,12,13,14";
+$z[15]=Array("global","",19520,19552);
+$z[15][4]['name']="cfg_templets_skin";
+$z[16]=Array("global","",24341,24373);
+$z[16][4]['name']="cfg_templets_skin";
+$z[17]=Array("global","",24563,24595);
+$z[17][4]['name']="cfg_templets_skin";
+$z[18]=Array("global","",24795,24827);
+$z[18][4]['name']="cfg_templets_skin";
+$z[19]=Array("global","",25021,25053);
+$z[19][4]['name']="cfg_templets_skin";
+$z[20]=Array("global","",25259,25291);
+$z[20][4]['name']="cfg_templets_skin";
+$z[21]=Array("global","",25491,25523);
+$z[21][4]['name']="cfg_templets_skin";
+$z[22]=Array("global","",25723,25755);
+$z[22][4]['name']="cfg_templets_skin";
+$z[23]=Array("global","",25943,25975);
+$z[23][4]['name']="cfg_templets_skin";
+$z[24]=Array("global","",26163,26195);
+$z[24][4]['name']="cfg_templets_skin";
+$z[25]=Array("global","",26401,26433);
+$z[25][4]['name']="cfg_templets_skin";
 
 ?>
